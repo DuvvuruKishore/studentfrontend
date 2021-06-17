@@ -100,9 +100,9 @@ function College() {
       id="demo-simple-select-filled" className="select" onChange={CollegeChange} value={college}>
       <MenuItem value="college">college</MenuItem>
     {higher.map((data)=>(
-      <div key={data._id}>
-        <MenuItem value={data.college}>{data.college}</MenuItem>
-        </div>
+  
+        <MenuItem key={data._id} value={data.college}>{data.college}</MenuItem>
+      
     ))}
   </Select>
 
@@ -116,9 +116,9 @@ function College() {
       id="demo-simple-select-filled" className="select" onChange={DepartmentChange} value={department}>
       <MenuItem value="department">department</MenuItem>
     {higher.map((data)=>(
-      <div key={data._id}>
-        <MenuItem value={data.collegedepartment}>{data.collegedepartment}</MenuItem>
-        </div>
+      
+        <MenuItem key={data._id} value={data.collegedepartment}>{data.collegedepartment}</MenuItem>
+        
     ))}
 
   </Select>

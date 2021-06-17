@@ -58,9 +58,9 @@ function Student() {
           
           <MenuItem value="college">college</MenuItem>
           {output.map((data,index)=>(
-            <div key={index}>
-            <MenuItem value={data}>{data}</MenuItem>
-            </div>
+          
+            <MenuItem key={index} value={data}>{data}</MenuItem>
+            
           ))}
         </Select>
         </div>
