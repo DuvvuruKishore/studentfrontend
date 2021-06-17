@@ -57,10 +57,10 @@ function Student() {
             id="demo-simple-select-filled" onChange={onCountryChange} value={country}>
           
           <MenuItem value="college">college</MenuItem>
-          {output.map((data)=>(
-            
+          {output.map((data,index)=>(
+            <div key={index}>
             <MenuItem value={data}>{data}</MenuItem>
-        
+            </div>
           ))}
         </Select>
         </div>
